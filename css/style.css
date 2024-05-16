@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+   overflow-inline: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 15px;
+    background-color: #1b1918;
+    color: #ccc;
+    height: 100px;
+}
+
+.logo_nav{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+h1{
+    font-family: "Lobster", sans-serif;
+    font-size: 3rem;
+    color: #f58634;
+    font-style: italic;
+    border-bottom: 2px double;
+
+}
+
+.logo_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.logo_input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.bi-search{
+    margin-left:-20px;
+    border: 2px solid #f58634;
+    padding-inline: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    color: #f58634;
+}
+
+::placeholder{
+    color: #ccc;
+}
+
+.menu{
+   height: 120px;;
+}
+
+
+
+.bi-list{
+   font-size: 30px;
+   display: none;
+}
+
+
+
+
+/* .menu_nav a:hover{
+    color: #f58634;
+    border-bottom: 2px solid #f58634;
+    transition: 0.5s;
+} */
+
+
+
+.bi-person, .bi-cart{
+    font-size: 24px;
+    color: #f58634;
+    font-weight: bolder;
+}
+
+.bi-heart{
+    font-size: 20px;
+    color: #f58634;
+    font-weight: bolder;
+}
+
+.links_nav{
+   display: flex;
+   /* border: 2px solid white; */
+   align-items: center;
+   justify-content: space-around;
+   gap: 30px;
+   list-style: none;  
+}
+
+.links_nav a{
+   color: white;
+   text-decoration: none;
+   border-bottom: 2px solid transparent;
+   transition: 0.5s;
+}
+
+.links_nav a:hover{
+   color: #f58634;
+   border-bottom: 2px solid #f58634;
+}
+
+.menu{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding-inline: 30px;
+    padding-block: 20px;
+    background-color: #f3f3f3;
+    height: 130px;
+}
+
+.menu_item{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 120px;
+    transition: 0.5s ease;
+}
+
+.menu_item:hover{
+    transform: translateY(-15px);
+}
+
+.menu_item img{
+    width: 50px;
+}
+
+.vinhoo, .champagnee{
+    width: 36px !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 95%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+.contrate{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+ .contrate img{
+    width: 80%;  
+
+ }
+
+ .contrate_texto{
+    position: absolute;
+    bottom: 250px;
+    /* border: 2px solid white; */
+    width: 50%;
+    left: 600px;
+ }
+
+ .contrate h2{
+    color: white; 
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.315);
+ }
+
+ .sou_bartender{
+    text-align: center;
+    padding-block: 100px;
+    background-color: #f3f3f3;
+    margin-top: 50px;
+ }
+
+ .btn_sou_bartender{
+    font-size: 28px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #f58634;
+    background: linear-gradient(to right,#1b1918,#864414);
+    padding: 20px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+ }
+
+ .btn_sou_bartender:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px #f58634;
+ }
+
+ .form_bartender{
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 12px;
+ }
+
+ .botoes_modal_bartender{
+    display: flex;
+    flex-flow: row !important;
+    /* border: 2px solid black; */
+    gap: 30px;
+    margin-top: 20px; 
+ }
+
+ .btn_enviar_bartender{
+    background-color: #007bff;
+    padding: 10px 22px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    opacity: .7;
+    font-size: 1rem;
+    transition: 0.4s;
+ }
+
+ .btn_enviar_bartender:hover{
+    opacity: 1;
+ }
+
+ .btn_fechar_bartender{
+    background-color: #888;
+    padding: 10px 22px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    opacity: .7;
+    font-size: 1rem;
+    transition: 0.4s;
+ }
+
+ .btn_fechar_bartender:hover{
+    opacity: 1;
+ }
+
+ #fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+    transition: 0.5s;
+    pointer-events: all;
+ }
+
+ #modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #fff;
+    max-width: 90%;
+    transition: 1s;
+    pointer-events: all;
+ }
+
+ .form_bartender h2{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+ }
+
+ .form_bartender div{
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+ }
+
+ .form_bartender div input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+ }
+
+ .hide{
+    display: none;
+    pointer-events: none;
+ }
+
+
+ .btn_contrate{
+    background-color: #f58634;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+ }
+
+ .btn_contrate:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px #f58634;
+ }
+
+
+ @keyframes botao{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+ }
+
+
+ footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding-block: 50px;
+    background-color: #f3f3f3;
+ }
+
+
+ footer h2{
+    font-size: 2rem;
+    font-family: lobster;
+ }
+
+ footer h3{
+    font-size: 2rem;
+    color: #f58634;
+    font-family: lobster;
+ }
+
+ footer p{
+    font-weight: bolder;
+ }
+
+ .redes i{
+    margin: 10px;
+    font-size: 18px;
+ }
+ 
+ .email{
+    text-decoration: none;
+    color: black;
+ }
+
+ .whisky{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+    transition: 0.5s;
+ }
+
+ .whisky div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .whisky div p{
+    width: 240px;
+    text-align: center;
+ }
+
+ .vodka{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .vodka div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .vodka div p{
+    width: 260px;
+    text-align: center;
+ }
+
+ .gin{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .gin div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .gin div img{
+    width: 180px;
+ }
+
+ .gin div p{
+    width: 260px;
+    text-align: center;
+ }
+
+
+
+ .licor{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .licor div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .licor div img{
+    width: 180px;
+ }
+
+ .licor div p{
+    width: 260px;
+    text-align: center;
+ }
+
+
+ .espumante{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .espumante div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .espumante div p{
+    width: 260px;
+    text-align: center;
+ }
+
+
+ .vinho{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .vinho div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .vinho div p{
+    width: 260px;
+    text-align: center;
+ }
+
+
+ .champagne{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .champagne div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .champagne div p{
+    width: 260px;
+    text-align: center;
+ }
+
+ .rum{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .rum div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .rum div p{
+    width: 260px;
+    text-align: center;
+ }
+
+
+ .kit{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 30px;
+    display: none;
+ }
+
+ .kit div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .kit div p{
+    width: 260px;
+    text-align: center;
+ }
+
+ .active{
+    display: flex;
+ }
+
+
+ @media (max-width:801px){
+   .logo_input{
+      display: none;
+   }
+
+   .links_nav{
+      flex-flow: column;
+      background-color: #1b1918;
+      position: absolute;
+      right: 0;
+      top: 90px;
+      padding: 30px;
+      border-radius: 12px;
+      /* display: none; */
+      top: 8vh;
+      z-index: 10;
+      width: 50vw;
+      height: 92vh;  
+      transform: translateX(100%);
+      transition: 0.3s ease-in;
+   }
+
+   .links_nav li{ 
+      background-color: #1b1918;
+      opacity: 0;
+   }
+
+  .bi-list{
+         display: block;
+         font-size: 40px;
+         color: white;
+         top: 30px;
+         z-index: 20;  
+         transition: 0.5s; 
+         margin-top: 10px;
+  }
+
+  .bi-list:hover{
+   color:  #f58634;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.active{
+   transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+   from{
+      opacity: 0;
+      transform: translateX(50px);
+   }
+   to{
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+.contrate_texto{
+   bottom: 80px;
+   left: 330px;
+}
+
+.contrate_texto h2{
+   font-size: 2rem;
+}
+
+#modal{
+   width: 50%;
+}
+ }
+
+ @media (max-width:601px){
+   .bebidas{
+      overflow: auto;
+   }
+
+   .bebida{
+      flex-flow: column;
+   }
+
+   .btn_sou_bartender{
+      font-size: 20px;
+      font-weight: bolder;
+   }
+
+   .contrate_texto{
+      bottom: 20px;
+      left: 260px;
+   }
+   
+   .contrate_texto h2{
+      font-size: 1.8rem;
+   }
+
+   footer{
+      flex-flow: column;
+      align-items: center;
+      gap: 30px;
+   }
+   }
+
+   @media (max-width:401px){
+      h1{
+         font-size: 2rem;   
+     }
+
+     .btn_sou_bartender{
+      font-size: 16px;
+      font-weight: bolder;
+   }
+
+   .contrate h2{
+     display: none;
+   }
+
+   .btn_contrate{
+      width: 150px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+   }
+
+   .contrate_texto{
+      bottom: 20px;
+      left: 200px;
+   }
+
+   }
+
+ 
+ 
+
+
+
+
+
+
+
+ 
